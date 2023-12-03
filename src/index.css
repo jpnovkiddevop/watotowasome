@@ -1,13 +1,263 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: khaki;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* styles.css */
+
+.nav {
+  background-color:powderblue;
+  padding: 10px 20px;
+}
+
+.nav--items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav--items li {
+  margin-right: 20px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+li a{
+  text-decoration: none;
+}
+
+.nav--items li:hover {
+  color: #ffcc00;
+  /* Change the color to your preference */
+}
+
+.nav--icon {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+}
+
+/* Add your existing keyframes here */
+@keyframes example {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Add more styles as needed */
+
+.nav--icon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  animation: iconanime 4s 4s  infinite  ;
+}
+
+@keyframes iconanime {
+   0% {
+    transform: rotate(0deg);
+   }
+
+   100% {
+    transform: rotate(360deg);
+   }
+}
+
+@media only screen and (max-width: 600px){
+  .nav{
+    padding: 0;
+    font-size: 0.5em;
+  }
+  .nav--items > li:last-child{
+    margin-left: 0;
+  }
+}
+
+.mycontainer{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* styles.css */
+
+.home {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
+.home-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.home-title {
+  color: #333;
+  margin: 0;
+}
+
+.home-slogan {
+  color: #555;
+  margin: 10px 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.home-title,
+p {
+  color: #555;
+}
+
+/* Media Queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+  .home {
+    grid-template-rows: auto auto 1fr;
+  }
+
+  .home-header {
+    padding: 10px;
+  }
+
+  main {
+    padding: 10px;
+  }
+}
+
+/* styles.css */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  width: 400px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.beneficiaries{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  background-color:#fff;
+  align-self: center;
+  align-content: center;
+  margin: 5%;
+  border-radius: 11px;
+  box-shadow: #ccc;
+  justify-content: space-around;
+}
+
+.beneficiary-container{
+  align-self: center;
+  background-color: antiquewhite;
+  padding: 5%;
+  border-radius: 11px;
+  box-shadow: black;
+}
+
+.my-images{
+  height: 200px;
+  width: 200px;
+  border-radius: 5%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+li  {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+li::before {
+  color: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform: scale(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+li:hover {
+  color: #f50057;
+}
+
+li:hover::before {
+  transform: scale(1);
+  transform-origin: bottom left ;
 }
