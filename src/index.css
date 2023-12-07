@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: khaki;
+  background-color: white;
 }
 
 code {
@@ -19,6 +19,7 @@ code {
 .nav {
   background-color:powderblue;
   padding: 10px 20px;
+  text-align: center;
 }
 
 .nav--items {
@@ -44,17 +45,6 @@ li a{
   text-decoration: none;
 }
 
-.nav--items li:hover {
-  color: #ffcc00;
-  /* Change the color to your preference */
-}
-
-.nav--icon {
-  max-width: 100px;
-  max-height: 100px;
-  border-radius: 50%;
-}
-
 /* Add your existing keyframes here */
 @keyframes example {
   0% {
@@ -66,7 +56,6 @@ li a{
   }
 }
 
-/* Add more styles as needed */
 
 .nav--icon {
   height: 100px;
@@ -78,10 +67,12 @@ li a{
 @keyframes iconanime {
    0% {
     transform: rotate(0deg);
+    border: 1px solid burlywood;
    }
 
    100% {
     transform: rotate(360deg);
+    border: 1px dotted aqua;
    }
 }
 
@@ -100,8 +91,6 @@ li a{
   gap: 10px;
   grid-template-columns: 1fr 1fr;
 }
-
-/* styles.css */
 
 .home {
   display: grid;
@@ -150,8 +139,6 @@ p {
     padding: 10px;
   }
 }
-
-/* styles.css */
 
 section {
   display: flex;
@@ -217,6 +204,13 @@ button:hover {
   padding: 5%;
   border-radius: 11px;
   box-shadow: black;
+  transition: all 0.5s;
+}
+
+.beneficiary-container:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: white;
 }
 
 .my-images{
@@ -225,39 +219,148 @@ button:hover {
   border-radius: 5%;
 }
 
+.container {
+  background-color:peachpuff;
+}
+
+.header {
+  color: powderblue;
+  text-shadow: 4px 4px 5px black;
+  text-align: center;
+  text-indent: 2px;
+}
+
+.header-2 {
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+  text-indent: 2px;
+}
+
+.ww-home {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 10px;
+}
+
+.ww-item {
+  border-radius: 0.7em;
+  background-color: rgba(240, 230, 140, 0.3);
+  margin: 0;
+  padding: 1em;
+}
+
+.ww-header {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.h5-bb:hover {
+  cursor: pointer;
+  border-bottom: 2px solid lightblue;
+}
+
+.h5-bb {
+  border-bottom: 2px solid yellow;
+  text-align: center;
+  margin-bottom: 0.5em;
+  /* Adjusted margin for better spacing */
+}
+
+.btn-container {
+  margin-top: 1em;
+  /* Adjusted margin for better spacing */
+}
+
+.btn-c {
+  background-color: burlywood;
+}
+
+.div-item {
+  grid-row: span 2;
+  /* Updated to span 2 rows */
+}
+
+.icon-contributor {
+  height: 150px;
+  width: 150px;
+  /* Ensure the image doesn't exceed its container */
+  border-radius: 50%;
+}
+
+.container-contributor {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  /* Adjusted for responsiveness */
+  grid-gap: 10px;
+}
+
+.item-contributor {
+  text-align: center;
+  /* Center the content */
+}
+
+@media (max-width: 600px) {
+  .ww-home {
+    grid-template-columns: 1fr;
+    /* Change to single column on small screens */
+  }
+
+  .ww-header {
+    grid-column: span 1;
+    /* Updated to span 1 column on small screens */
+  }
+
+  .div-item {
+    grid-row: span 1;
+    /* Updated to span 1 row on small screens */
+  }
+}
+
+/* Add this CSS to your stylesheet or in a style tag in your React component */
+
+footer {
+  background-color: rgb(7, 7, 56);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
 ul {
   list-style: none;
   padding: 0;
-  display: flex;
 }
 
-li  {
-  margin: 0 15px;
-  text-decoration: none;
+li {
+  margin-bottom: 10px;
+}
+
+.li-email {
+  padding: 5px;
+  width: 200px;
+  /* Adjust width as needed */
+}
+
+hr {
+  border-color: #fff;
+  margin: 20px 0;
+}
+
+/* Customize the styling for links as needed */
+a {
   color: #fff;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
+  text-decoration: none;
 }
 
-li::before {
-  color: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
-  transform: scale(0);
-  transform-origin: bottom right;
-  transition: transform 0.3s ease-out;
-}
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  li {
+    font-size: 14px;
+  }
 
-li:hover {
-  color: #f50057;
-}
-
-li:hover::before {
-  transform: scale(1);
-  transform-origin: bottom left ;
+  .li-email {
+    width: 100%;
+    /* Full width for small screens */
+  }
 }

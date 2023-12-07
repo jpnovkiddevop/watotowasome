@@ -7,12 +7,15 @@ import Founders from './Founders';
 import Beneficiaries from './Beneficiaries';
 import Partners from './Partners';
 import Admin from './Admin';
+import Footer from './Footer';
 import {data} from './data'
+import {contributors} from "./contributors"
+
 export const WasomeContext = createContext()
 
 function App() {
   return (
-    <WasomeContext.Provider value={{data}}>
+    <WasomeContext.Provider value={{data}, {contributors}}>
     <Router>
       <Navbar />
       <Routes>
@@ -23,6 +26,7 @@ function App() {
         <Route path="/partners" element={<Partners />} />
         <Route path="/admin" element={<Admin />} />
       </Routes>
+      <Footer />
     </Router>
     </WasomeContext.Provider>
   );
