@@ -8,14 +8,14 @@ import Beneficiaries from './Beneficiaries';
 import Partners from './Partners';
 import Admin from './Admin';
 import Footer from './Footer';
-import {data} from './data'
-import {contributors} from "./contributors"
+import data from './data'
+import contributors from "./contributors"
 
 export const WasomeContext = createContext()
 
 function App() {
   return (
-    <WasomeContext.Provider value={{data}, {contributors}}>
+    <WasomeContext.Provider value={{data, contributors}}>
     <Router>
       <Navbar />
       <Routes>
@@ -34,25 +34,3 @@ function App() {
 
 export default App;
 
-
-/*import React from "react";
-import Navbar from "./Navbar";
-import Home from "./Home";
-import Admin from "./Admin";
-
-function App() {
-
-  return (
-    <>
-     <Navbar  />
-     <section className="container mycontainer">
-       <Home />
-       <Admin />
-     </section>
-    </>
-  )
-  ;
-}
-
-export default App;
-*/

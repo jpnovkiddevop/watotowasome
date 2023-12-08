@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: white;
+   background-color: rgb(31, 30, 30);
 }
 
 code {
@@ -14,12 +14,15 @@ code {
     monospace;
 }
 
-/* styles.css */
-
 .nav {
-  background-color:powderblue;
+  background-color: rgb(31, 30, 30);
+  /*background-color:powderblue;*/
   padding: 10px 20px;
   text-align: center;
+}
+
+.nav:hover {
+  background-color: powderblue;
 }
 
 .nav--items {
@@ -55,7 +58,6 @@ li a{
     opacity: 1;
   }
 }
-
 
 .nav--icon {
   height: 100px;
@@ -243,11 +245,23 @@ button:hover {
   grid-gap: 10px;
 }
 
+.ww-home:hover {
+  background-color: black;
+  color: yellow;
+  text-rendering: 2px 2px 5px black;
+}
+
 .ww-item {
   border-radius: 0.7em;
-  background-color: rgba(240, 230, 140, 0.3);
+  background-color: rgb(31, 30, 30);
   margin: 0;
   padding: 1em;
+}
+
+.ww-item:hover {
+  color: white;
+  /*background-color: rgba(240, 230, 140, 0.3);*/
+  background-color: black;
 }
 
 .ww-header {
@@ -264,12 +278,11 @@ button:hover {
   border-bottom: 2px solid yellow;
   text-align: center;
   margin-bottom: 0.5em;
-  /* Adjusted margin for better spacing */
 }
 
 .btn-container {
   margin-top: 1em;
-  /* Adjusted margin for better spacing */
+  border-radius: .8em;
 }
 
 .btn-c {
@@ -278,13 +291,11 @@ button:hover {
 
 .div-item {
   grid-row: span 2;
-  /* Updated to span 2 rows */
 }
 
 .icon-contributor {
   height: 150px;
   width: 150px;
-  /* Ensure the image doesn't exceed its container */
   border-radius: 50%;
 }
 
@@ -308,23 +319,25 @@ button:hover {
 
   .ww-header {
     grid-column: span 1;
-    /* Updated to span 1 column on small screens */
   }
 
   .div-item {
     grid-row: span 1;
-    /* Updated to span 1 row on small screens */
   }
 }
 
-/* Add this CSS to your stylesheet or in a style tag in your React component */
 
 footer {
-  background-color: rgb(7, 7, 56);
+  /*background-color: rgba(7, 7, 56, 0.3);*/
+  background-color: rgb(31, 30, 30);
   color: #fff;
   padding: 20px;
   text-align: center;
   padding: 10px;
+}
+
+footer:hover {
+  background-color: black;
 }
 
 ul {
@@ -339,7 +352,6 @@ li {
 .li-email {
   padding: 5px;
   width: 200px;
-  /* Adjust width as needed */
 }
 
 hr {
@@ -347,7 +359,6 @@ hr {
   margin: 20px 0;
 }
 
-/* Customize the styling for links as needed */
 a {
   color: #fff;
   text-decoration: none;

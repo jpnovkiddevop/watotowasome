@@ -6,7 +6,7 @@ import benef5 from '../images/benef5.jpg'
 import benef6 from '../images/benef6.jpg'
 import benef from '../images/benef.jpg'
 
-export const data = [
+ const data = [
     {'name':'Janine Jones', 'school':'furahahill', 'admissionNumber':2004, 'img':benef},
     {'name':'Nathan James', 'school':'lakehill', 'admissionNumber':2002, 'img':benef1},
     {'name':'King Price', 'school':'westside', 'admissionNumber':2003, 'img':benef2},
@@ -15,3 +15,5 @@ export const data = [
     {'name':'Prudence Shine', 'school':'little friends', 'admissionNumber':2103, 'img':benef5},
     {'name':'Kimani Marley', 'school':'westside', 'admissionNumber':2303, 'img':benef6},
 ]
+
+export default data

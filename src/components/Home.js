@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { WasomeContext } from './App'
 
 function Home() {
@@ -65,7 +65,7 @@ function Home() {
                 </div>
               </div>
             </div>
-
+    
             <div class="col-sm-12 mt-2 shadow">
               <div class="card">
                 <div class="card-body">
@@ -75,11 +75,10 @@ function Home() {
               +
               Children Helped
             </h5></p>
-                  <a href="/" className="btn btn-primary btn-c">Sponsor a child</a>
-                </div>
-              </div>
-            </div>
-
+                  <a href="/" className="btn btn-primary btn-c btn-sm">Sponsor</a>
+             </div>
+             </div>
+             </div>
              <div class="col-sm-12 mt-2">
               <div class="card">
                 <div class="card-body">
@@ -89,7 +88,7 @@ function Home() {
               K+
               Funds Raised
             </h5></p>
-                  <a href="/" className="btn btn-primary btn-c">view top sponsors</a>
+                  <a href="/" className="btn btn-primary btn-c bnt-sm">view onboard partners</a>
                 </div>
               </div>
             </div>
@@ -101,9 +100,8 @@ function Home() {
             Make an impact
             Your contributions matter
           </h5>
-        <hr/>
         <div className='btn-container'>
-          <button className='btn btn-outline-primary mt-3 '>Donate</button>
+          <button className='btn btn-outline-primary mt-3 btn-sm'>Donate</button>
         </div>       
        </section>
 

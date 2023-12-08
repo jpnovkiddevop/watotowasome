@@ -4,8 +4,7 @@ import soma from "../images/soma.jpg";
 
 function Navbar() {
   return (
-    <nav className='nav'>
-
+    <nav className='nav' >
       <ul className='nav--items'>
 
         <li><Link to="/img"><img src={soma} alt='wasome logo' className='nav--icon' /></Link></li>

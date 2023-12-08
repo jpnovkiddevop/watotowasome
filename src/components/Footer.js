@@ -6,7 +6,7 @@ function Footer() {
        <ul>
           <li>Chogoria Town,off Kilifi RD Enterprise HSE 1st floor office 
             no.10</li>
-          <li>phone: +254727438682</li>
+          <li>phone: +254123456778</li>
           <h5>subscribe to updates</h5>
           <li><input type="email" placeholder='email' className='li-email'/>
             </li>
